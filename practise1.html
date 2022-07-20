@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script>
+	<title></title>
+</head>
+<body>
+	<h2 id="text"> You are clicking on the text id</h2>
+	<p id="html">On clicking the html id</p>
+	<p>thijfdkljasdklfjsdalk;fdsja;klsfd</p>
+</body>
+<script type="text/javascript">
+	 $(document).ready(function() {
+      $("#text").click(function(){
+         alert($("p").text());
+      });
+      $("#html").click(function(){
+         alert($("p").html());
+      });
+   });
+</script>
+</html>
